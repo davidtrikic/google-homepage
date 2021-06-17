@@ -10,24 +10,64 @@ li {
 a:link, a:visited, a:active {
   color: rgba(0, 0, 0, 0.87);
 }
-nav {
+header {
+  padding: 15px 30px;
+}
+.main-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-.nav-right li:nth-child(3){
+a:hover {
+  text-decoration: underline;
+}
+.main-nav ul {
+  display: flex;
+  align-items: center;
+}
 
+.main-nav li {
+  padding-left: 16px;
 }
+
 .apps-button {
   display: inline-block;
   position: relative;
-  top: 7px;
+  top: 4px;
 }
-
-nav .sign-in-button {
+.apps-button svg {
+  fill: #5f6368;
+}
+.apps-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip {
   display: inline-block;
-  padding: 3px 13px;
-  font-weight: 700;
+  position: absolute;
+  bottom: -27px;
+  left: -35px;
+  width: 90px;
+  padding: 0 2px;
+  text-align: center;
   color: #fff;
-  background: linear-gradient(#4387fd,#4683ea);
-  border-radius: 2px;
+  background: #5f6368;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s ease-in;
+  transition-delay: .2s;
+}
+.main-nav .sign-in-button {
+  display: inline-block;
+  padding: 6px 26px;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background: #1a73e8;
+  border-radius: 4px;
+}
+.sign-in-button:hover {
+  text-decoration: none;
+  background: #2b7de9;
+  box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
 }
