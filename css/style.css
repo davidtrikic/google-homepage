@@ -12,6 +12,9 @@ li {
 a:link, a:visited, a:active {
   color: rgba(0, 0, 0, 0.87);
 }
+a:hover {
+  cursor: pointer;
+}
 
 /* Header */
 
@@ -49,18 +52,18 @@ a:hover {
 .apps-button:hover {
   background-color: rgba(60,64,67,0.08);
 }
-.apps-button:hover .tooltip {
+.apps-button:hover .tooltip-apps {
   visibility: visible;
   opacity: 1;
 }
-.tooltip {
+.tooltip-apps {
   display: inline-block;
   position: absolute;
   bottom: -28px;
   left: -26px;
   width: 90px;
-  padding: 0 2px;
   text-align: center;
+  line-height: 1.8;
   color: #fff;
   background: #5f6368;
   border-radius: 4px;
@@ -107,8 +110,9 @@ a:hover {
   border: 1px solid #dfe1e5;
   border-radius: 24px;
 }
-.search-input:focus {
+.search-input:hover, .search-input:focus {
   outline: none;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 .search-icon {
   fill: #9aa0a6;
@@ -118,8 +122,41 @@ a:hover {
 }
 .mic-icon {
   position: absolute;
-  top: 12px;
-  right: 15px;
+  top: 2px;
+  right: 0;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+.tooltip-mic {
+  position: absolute;
+  font-size: 13px;
+  line-height: 1.8;
+  width: 106px;
+  bottom: -35px;
+  left: -40px;
+  text-align: center;
+  background-color: #5f6368;
+  color: #fff;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s ease-in;
+  transition-delay: .2s;
+}
+.mic-icon:hover .tooltip-mic {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip-mic::before {
+  content: "";
+  display: block;
+  background: #5f6368;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 48px;
+  top: -5px;
+  transform: rotate(45deg);
 }
 
 /* Search Buttons */
