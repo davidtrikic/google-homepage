@@ -36,10 +36,18 @@ a:hover {
 .apps-button {
   display: inline-block;
   position: relative;
-  top: 4px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  padding-top: 8px;
+  padding-left: 8px;
+  border-radius: 50%;
 }
 .apps-button svg {
   fill: #5f6368;
+}
+.apps-button:hover {
+  background-color: rgba(60,64,67,0.08);
 }
 .apps-button:hover .tooltip {
   visibility: visible;
@@ -48,8 +56,8 @@ a:hover {
 .tooltip {
   display: inline-block;
   position: absolute;
-  bottom: -27px;
-  left: -35px;
+  bottom: -28px;
+  left: -26px;
   width: 90px;
   padding: 0 2px;
   text-align: center;
@@ -125,6 +133,7 @@ a:hover {
   border: 1px solid #f8f9fa;
 }
 .search-button:hover, .lucky-button:hover {
+  cursor: pointer;
   box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
   border: 1px solid #dadce0;
   border-radius: 4px;
