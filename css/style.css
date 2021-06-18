@@ -26,7 +26,7 @@ header {
 a:hover {
   text-decoration: underline;
 }
-.main-nav ul {
+.main-nav ul:nth-child(2) {
   display: flex;
   align-items: center;
 }
@@ -64,6 +64,7 @@ a:hover {
 .main-nav .sign-in-button {
   display: inline-block;
   padding: 6px 26px;
+  min-width: 80px;
   font-family: Helvetica, sans-serif;
   color: #fff;
   background: #1a73e8;
@@ -81,7 +82,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
   padding-bottom: 5em;
 }
 .search-wrapper {
@@ -113,7 +114,7 @@ a:hover {
   right: 15px;
 }
 
-/* Buttons */
+/* Search Buttons */
 
 .search-button, .lucky-button {
   padding: 9px 16px;
@@ -153,4 +154,52 @@ footer li {
 }
 a.footer-link {
   color: #70757a;
+}
+
+/* Mobile nav */
+
+.mobile-nav {
+  display: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.mobile-nav a {
+  color: #5f6368;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+  }
+  .gmail-link, .images-link {
+    display: none;
+  }
+  .main-nav {
+    justify-content: space-between;
+  }
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mic-icon {
+    display: none;
+  }
+  .main-nav .sign-in-button {
+    font-size: 14px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .logo {
+    margin-top: 160px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .logo {
+    max-width: 160px;
+    margin-top: 100px;
+  }
 }
