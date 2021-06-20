@@ -188,7 +188,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   line-height: 1;
@@ -220,7 +220,14 @@ a.footer-link {
 
 /* Media Queries */
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 540px) {
+  .logo {
+    max-width: 160px;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-device-width : 1024px) {
   header {
     padding-left: 10px;
     padding-right: 10px;
@@ -244,7 +251,7 @@ a.footer-link {
     display: none;
   }
   .logo {
-    margin-top: 160px;
+    margin-top: 60px;
   }
   .buttons {
     display: none;
@@ -254,9 +261,14 @@ a.footer-link {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   .logo {
-    max-width: 160px;
-    margin-top: 100px;
+    margin-top: 160px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo {
+    margin-top: 160px;
   }
 }
