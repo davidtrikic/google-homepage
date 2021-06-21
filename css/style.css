@@ -4,8 +4,8 @@
   --clr-font-secondary: #202124;
   --clr-gray-main: #5f6368;
   --clr-gray-secondary: #3c4043; 
-  --clr-blue-secondary: #1a73e8;
-  --clr-blue-secondary-hover: #2b7de9;
+  --clr-blue-main: #1a73e8;
+  --clr-blue-main-hover: #2b7de9;
   --clr-shadow-blue: rgba(66,133,244,0.3);
   --clr-white-gray-main: #f8f9fa;
   --clr-white-gray-secondary: #f2f2f2;
@@ -40,6 +40,7 @@ a:hover {
 header {
   padding: 15px 30px;
 }
+/* Nav */
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -51,6 +52,22 @@ header {
 }
 .nav li {
   padding-left: 16px;
+}
+/* Mobile nav */
+.mobile-nav {
+  display: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.mobile-nav a {
+  color: var(--clr-gray-main);
+  padding: .5em;
+  padding-bottom: 1em;
+  text-decoration: none;
+}
+.mobile-nav li:first-child a {
+  color: var(--clr-blue-main);
+  border-bottom: 2px solid var(--clr-blue-main);
 }
 .apps-button {
   display: inline-block;
@@ -94,12 +111,12 @@ header {
   min-width: 80px;
   font-family: Helvetica, sans-serif;
   color: #fff;
-  background: var(--clr-blue-secondary);
+  background: var(--clr-blue-main);
   border-radius: 4px;
 }
 .sign-in-button:hover, .sign-in-button:active {
   text-decoration: none;
-  background: var(--clr-blue-secondary-hover);
+  background: var(--clr-blue-main-hover);
   box-shadow: 0 1px 3px 1px var(--clr-shadow-blue);
 }
 
@@ -145,7 +162,6 @@ header {
 .tooltip-mic {
   position: absolute;
   font-size: 13px;
-  line-height: 1.8;
   width: 106px;
   bottom: -35px;
   left: -40px;
@@ -202,7 +218,7 @@ footer {
   bottom: 0;
   width: 100%;
   line-height: 1;
-  border-top: 1px solid #dadce0;
+  border-top: 1px solid var(--clr-light-gray-main);
   background-color: var(--clr-white-gray-secondary);
 }
 footer ul {
@@ -214,17 +230,6 @@ footer li {
   padding: 15px;
 }
 a.footer-link {
-  color: var(--clr-gray-main);
-}
-
-/* Mobile nav */
-
-.mobile-nav {
-  display: none;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.mobile-nav a {
   color: var(--clr-gray-main);
 }
 
@@ -256,6 +261,7 @@ a.footer-link {
   header {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
   }
   .nav {
     justify-content: space-between;
@@ -284,6 +290,7 @@ a.footer-link {
   }
   .search-wrapper {
     margin-bottom: 100px;
+    max-width: 100%;
   }
 }
 
