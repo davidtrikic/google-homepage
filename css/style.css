@@ -26,7 +26,7 @@ a:hover {
 header {
   padding: 15px 30px;
 }
-.main-nav {
+.nav {
   display: flex;
   justify-content: flex-end;
   font-size: 13px;
@@ -34,11 +34,11 @@ header {
 a:hover {
   text-decoration: underline;
 }
-.main-nav ul:nth-child(2) {
+.desktop-nav {
   display: flex;
   align-items: center;
 }
-.main-nav li {
+.nav li {
   padding-left: 16px;
 }
 .apps-button {
@@ -54,7 +54,7 @@ a:hover {
 .apps-button svg {
   fill: #5f6368;
 }
-.apps-button:hover {
+.apps-button:hover, .apps-button:active {
   background-color: rgba(60,64,67,0.08);
 }
 .apps-button:hover .tooltip-apps {
@@ -77,7 +77,7 @@ a:hover {
   transition: opacity .1s ease-in;
   transition-delay: .2s;
 }
-.main-nav .sign-in-button {
+.nav .sign-in-button {
   display: inline-block;
   padding: 6px 26px;
   min-width: 80px;
@@ -86,7 +86,7 @@ a:hover {
   background: #1a73e8;
   border-radius: 4px;
 }
-.sign-in-button:hover {
+.sign-in-button:hover, .sign-in-button:active {
   text-decoration: none;
   background: #2b7de9;
   box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
@@ -220,28 +220,44 @@ a.footer-link {
 
 /* Media Queries */
 
+@media only screen and (max-width: 320px) {
+  .desktop-nav li:nth-child(3), .desktop-nav li:nth-child(4) {
+    padding-left: 0;
+  }
+  .mobile-nav {
+    font-size: 12px;
+  }
+  .mobile-nav li {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+}
 @media only screen and (max-width: 540px) {
   .logo {
     max-width: 160px;
     margin-top: 100px;
   }
+  .how-search-works {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 768px) and (max-device-width : 1024px) {
+@media only screen and (max-width: 768px) {
   header {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .main-nav {
+  .nav {
     justify-content: space-between;
   }
-  .main-nav .sign-in-button {
+  .nav .sign-in-button {
     font-size: 14px;
     padding-left: 18px;
     padding-right: 18px;
   }
   .gmail-link, .images-link {
     display: none;
+    width: 0;
   }
   .mobile-nav {
     display: flex;
