@@ -25,6 +25,7 @@ li {
 }
 a {
   color: inherit;
+  user-select: none;
 }
 a:hover {
   text-decoration: underline;
@@ -84,7 +85,7 @@ header {
   fill: var(--clr-gray-main);
 }
 .apps-button:hover, .apps-button:active {
-  background-color: rgba(60, 64, 67, 0.08);
+  background-color: #3c404314;
 }
 .apps-button:hover .tooltip-apps {
   visibility: visible;
@@ -176,6 +177,19 @@ header {
   width: 64px;
   height: 64px;
 }
+.apps-menu .button-wrapper a {
+  padding: 10px 24px;
+  margin: 16px auto;
+  line-height: 1.15;
+  font-weight: 300;
+  color: var(--clr-blue-main);
+  border: 1px solid var(--clr-light-gray-secondary);
+  border-radius: 4px;
+}
+.apps-menu .button-wrapper a:hover {
+  border-color: #cce0fc;
+}
+
 /* Apps menu icon positioning */
 
 .apps-menu_top-group li:nth-child(2) .app-icon { background-position: 0 -1794px; }
@@ -330,9 +344,6 @@ a.footer-link {
 /* Media Queries */
 
 @media only screen and (max-width: 320px) {
-  .desktop-nav li:nth-child(3), .desktop-nav li:nth-child(4) {
-    padding-left: 0;
-  }
   .mobile-nav {
     font-size: 12px;
   }
@@ -340,7 +351,11 @@ a.footer-link {
     padding-left: 0;
     padding-right: 15px;
   }
+  .apps-menu {
+    right: 2px;
+  }
 }
+
 @media only screen and (max-width: 540px) {
   .logo {
     max-width: 160px;
@@ -367,7 +382,6 @@ a.footer-link {
   }
   .gmail-link, .images-link {
     display: none;
-    width: 0;
   }
   .mobile-nav {
     display: flex;
