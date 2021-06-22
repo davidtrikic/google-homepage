@@ -65,6 +65,7 @@ header {
   font-weight: 600;
 }
 .mobile-nav a {
+  font-size: 12px;
   color: var(--clr-gray-main);
   padding: .5em;
   padding-bottom: 1em;
@@ -256,7 +257,6 @@ header {
   padding: 5px 45px;
   border: 1px solid var(--clr-light-gray-secondary);
   border-radius: 24px;
-  box-shadow: none;
 }
 .search-input:hover, .search-input:focus {
   outline: none;
@@ -351,9 +351,6 @@ a.footer-link {
 /* Media Queries */
 
 @media only screen and (max-width: 320px) {
-  .mobile-nav {
-    font-size: 12px;
-  }
   .mobile-nav li {
     padding-left: 0;
     padding-right: 15px;
