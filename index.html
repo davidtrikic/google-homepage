@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Google</title>
@@ -18,10 +21,52 @@
         <ul class="desktop-nav">
           <li><a class="gmail-link" href="">Gmail</a></li>
           <li><a class="images-link" href="">Images</a></li>
-          <li><a class="apps-button" href=""><svg class="gb_Ve" focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg><span class="tooltip-apps">Google apps</span></a>
+          <li id="apps-button"><a class="apps-button"><svg class="gb_Ve" focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg><span class="tooltip-apps">Google apps</span></a>
           </li>
           <li><a class="sign-in-button" href="">Sign in</a></li>
         </ul>
+        <div class="apps-menu" id="apps-menu">
+          <ul class="apps-menu_top-group">
+            <li><a href=""><div class="app-icon"></div><span>Account</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Search</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Maps</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Youtube</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Play</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Gmail</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Drive</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Calendar</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Translate</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Photos</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Images</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>News</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Meet</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Chat</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Duo</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Chrome</span></a></li>
+            <li><a href=""><div class="app-icon-empty"></div><span>Empty</span></a></li>
+            <li><a href=""><div class="app-icon-empty"></div><span>Empty</span></a></li>
+          </ul>
+          <ul class="apps-menu_bottom-group">
+            <li><a href=""><div class="app-icon"></div><span>Docs</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Books</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Blogger</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Contacts</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Hangouts</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Sheets</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Slides</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Keep</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Jamboard</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Classroom</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Earth</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Collections</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Arts and Culture</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Google Ads</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Podcasts</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Google One</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Travel</span></a></li>
+            <li><a href=""><div class="app-icon"></div><span>Forms</span></a></li>
+          </ul>
+        </div>
     </nav>
   </header>
   <main class="main-content">
@@ -53,5 +98,6 @@
       <li><a class="footer-link" href="">Settings</a></li>
     </ul>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
