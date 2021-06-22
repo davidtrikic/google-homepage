@@ -15,6 +15,7 @@
  
 }
 body {
+  position: relative;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.7;
@@ -173,7 +174,7 @@ header {
 .app-icon {
   width: 64px;
   height: 60px;
-  background-image: url("/images/google-icons.png");
+  background-image: url("images/google-icons.png");
   background-size: 64px 3100px;
   transform: scale(calc(5/6));
 }
@@ -205,7 +206,7 @@ header {
 .apps-menu_top-group li:nth-child(8) .app-icon { background-position: 0 -2553px; }
 .apps-menu_top-group li:nth-child(9) .app-icon { background-position: 0 -1932px; }
 .apps-menu_top-group li:nth-child(10) .app-icon { background-position: 0 -2829px; }
-.apps-menu_top-group li:nth-child(11) .app-icon { background-image: url(/images/icons8-google-images.svg); 
+.apps-menu_top-group li:nth-child(11) .app-icon { background-image: url(images/icons8-google-images.svg); 
   background-size: 64px 64px;} 
 .apps-menu_top-group li:nth-child(12) .app-icon { background-position: 0 -1311px; }
 .apps-menu_top-group li:nth-child(13) .app-icon { background-position: 0 -690px; }
