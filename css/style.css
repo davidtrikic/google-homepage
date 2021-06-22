@@ -196,7 +196,7 @@ header {
 
 /* Apps menu icon positioning */
 
-.apps-menu_top-group li:nth-child(2) .app-icon { background-position: 0 -1794px; }
+.apps-menu_top-group li:nth-child(2) .app-icon { background-position-x:  0; background-position-y: -1794px; }
 .apps-menu_top-group li:nth-child(3) .app-icon { background-position: 0 -483px; }
 .apps-menu_top-group li:nth-child(4) .app-icon { background-position: 0 -2622px; }
 .apps-menu_top-group li:nth-child(5) .app-icon { background-position: 0 -207px; }
