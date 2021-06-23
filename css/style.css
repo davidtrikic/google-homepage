@@ -239,7 +239,7 @@ background-size: 64px 64px;}
 /* Main content */
 
 .logo {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .search-form {
   display: flex;
@@ -348,7 +348,7 @@ footer ul {
 footer li:not(.settings-menu li){
   padding: 15px;
 }
-.footer-link {
+footer a{
   color: var(--clr-gray-main);
 }
 .settings-menu-wrapper {
@@ -362,6 +362,7 @@ footer li:not(.settings-menu li){
   width: 155px;
   background-color: #fff;
   border: 1px solid var(--clr-gray-main);
+  display: none;
 }
 .settings-menu li {
   width: 100%;
