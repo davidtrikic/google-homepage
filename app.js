@@ -9,11 +9,11 @@ appsButton.addEventListener('click', () => {
 if (window.getComputedStyle(appsMenu).display == 'none') 
     { 
         appsMenu.style.display = 'block';
-        appsButton.style.backgroundColor = "#3c404314";
+        appsButton.style.backgroundColor = "var(--clr-gray-hover)";
     }
     else { 
         appsMenu.style.display = 'none';
-        appsButton.style.backgroundColor = "#fff";
+        appsButton.style.backgroundColor = "var(--clr-background)";
     }
 });
 
@@ -29,7 +29,7 @@ main.addEventListener('click', () => {
     if(window.getComputedStyle(appsMenu).display == 'block') 
     {
         appsMenu.style.display = 'none';
-        appsButton.style.backgroundColor = "#fff";
+        appsButton.style.backgroundColor = "var(--clr-background)";
     }
     if (window.getComputedStyle(settingsMenu).display == 'block') 
         settingsMenu.style.display = 'none';
