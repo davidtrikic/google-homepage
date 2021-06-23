@@ -345,10 +345,32 @@ footer ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-footer li {
+footer li:not(.settings-menu li){
   padding: 15px;
 }
-a.footer-link {
+.footer-link {
+  color: var(--clr-gray-main);
+}
+.settings-menu-wrapper {
+  position: relative;
+  display: block;
+}
+.settings-menu {
+  position: absolute;
+  bottom: 45px;
+  right: 0;
+  width: 155px;
+  background-color: #fff;
+  border: 1px solid var(--clr-gray-main);
+}
+.settings-menu li {
+  width: 100%;
+}
+.settings-menu a {
+  display: inline-block;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
   color: var(--clr-gray-main);
 }
 
