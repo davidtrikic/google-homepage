@@ -224,7 +224,7 @@ header {
 
 /* Apps menu icon positioning */
 
-.apps-menu_top-group li:nth-child(1) .app-icon { background: url("../images/icons8-github-96.png"); 
+.apps-menu_top-group li:nth-child(1) .app-icon { background: url("../images/github_icon.png"); 
 background-size: 64px 64px;}
 .apps-menu_top-group li:nth-child(2) .app-icon { background-position: 0 -1794px; }
 .apps-menu_top-group li:nth-child(3) .app-icon { background-position: 0 -483px; }
@@ -235,7 +235,7 @@ background-size: 64px 64px;}
 .apps-menu_top-group li:nth-child(8) .app-icon { background-position: 0 -2553px; }
 .apps-menu_top-group li:nth-child(9) .app-icon { background-position: 0 -1932px; }
 .apps-menu_top-group li:nth-child(10) .app-icon { background-position: 0 -2829px; }
-.apps-menu_top-group li:nth-child(11) .app-icon { background-image: url("../images/iconfinder_87891_images_icon_64px.png"); 
+.apps-menu_top-group li:nth-child(11) .app-icon { background-image: url("../images/google_images_icon.png"); 
   background-size: 64px 64px;} 
 .apps-menu_top-group li:nth-child(12) .app-icon { background-position: 0 -1311px; }
 .apps-menu_top-group li:nth-child(13) .app-icon { background-position: 0 -690px; }
@@ -355,10 +355,26 @@ background-size: 64px 64px;}
   border: 1px solid var(--clr-border-secondary); 
   border-radius: 4px;
 }
-
+.theme-toggler {
+  display: inline-block;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  background: var(--clr-background);
+  border: 1px solid var(--clr-border);
+  border-radius: 4px;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--clr-font-main);
+}
+.theme-toggler:hover {
+  background: var(--clr-apps-button_hover);
+}
 /* || Footer */
 
 footer {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
