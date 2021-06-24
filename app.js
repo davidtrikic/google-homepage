@@ -39,10 +39,8 @@ main.addEventListener('click', () => {
 themeToggler.addEventListener('click', () => {
     if (!document.documentElement.hasAttribute('data-theme')) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        themeToggler.textContent = 'Light mode';
     }
     else {
         document.documentElement.removeAttribute('data-theme');
-        themeToggler.textContent = 'Dark mode';
-    }
+        }
 });
