@@ -9,7 +9,7 @@ appsButton.addEventListener('click', () => {
 if (window.getComputedStyle(appsMenu).display == 'none') 
     { 
         appsMenu.style.display = 'block';
-        appsButton.style.backgroundColor = "var(--clr-gray-hover)";
+        appsButton.style.backgroundColor = "var(--clr-apps-button-hover)";
     }
     else { 
         appsMenu.style.display = 'none';
