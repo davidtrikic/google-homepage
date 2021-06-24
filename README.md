@@ -1,4 +1,4 @@
-# The Odin Project \- Web Develompent Course ![odin_project_logo](images/the_odin_project_logo.svg)
+# The Odin Project \- Web Develompent Course ![odin_project_logo](images/the_odin_project_logo.png)
 
 ## Project: Google Homepage
 Deconstructing and building a Google homepage using HTML, CSS and Javascript
