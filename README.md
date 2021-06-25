@@ -1,4 +1,4 @@
-<p align="center">![odin_project_logo](images/the_odin_project_logo.png)</p>
+<p align="center"><img src"images/the_odin_project_logo.png"></p>
 
 # The Odin Project \- Web Develompent Course 
 
