@@ -9,7 +9,7 @@ const themeToggler = document.getElementById('theme-toggler');
 appsButton.addEventListener('click', () => {
 if (window.getComputedStyle(appsMenu).display == 'none') { 
         appsMenu.style.display = 'block';
-        appsButton.style.backgroundColor = "var(--clr-apps-button-hover)";
+        appsButton.style.backgroundColor = "var(--clr-apps-button_hover)";
     }
     else { 
         appsMenu.style.display = 'none';
