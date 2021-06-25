@@ -5,12 +5,12 @@
 </p>
 <div align="center">
 
-  # The Odin Project \- Web Develompent Course 
+  # The Odin Project \- Web Development Course 
 
 </div>
 
 ## Project: Google Homepage
-> Deconstructing and building a Google homepage using HTML, CSS and Javascript
+Deconstructing and building a Google homepage using HTML, CSS and Javascript
 
 -> [Live Demo](https://davidtrikic.github.io/google-homepage/)
 
