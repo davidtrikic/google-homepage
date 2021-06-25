@@ -1,4 +1,8 @@
-<p align="center"><img width="60" src"https://www.theodinproject.com/assets/odin-logo-bd86cf893a3de1f1daceabc1377f58669776616a91ab70c601fd5c16a4686468.svg"></p>
+<p align="center">
+
+  <img width="60" src"https://www.theodinproject.com/assets/odin-logo-bd86cf893a3de1f1daceabc1377f58669776616a91ab70c601fd5c16a4686468.svg">
+
+</p>
 
 # The Odin Project \- Web Develompent Course 
 
@@ -10,7 +14,7 @@ Deconstructing and building a Google homepage using HTML, CSS and Javascript
 ## Screenshots
 
 ![Screenshot_desktop_light_1](screenshots/Screenshot_desktop_light_1.png)
-![Screenshot_desktop_light_](screenshots/Screenshot_desktop_light_.png)
+![Screenshot_desktop_light_](screenshots/Screenshot_desktop_light_2.png)
 ![Screenshot_desktop_dark_1](screenshots/Screenshot_desktop_dark_1.png)
 
 ![Screenshot_mobile_1](screenshots/Screenshot_mobile_1.png)
