@@ -1,11 +1,12 @@
-  # The Odin Project \- Web Development Course 
+# The Odin Project: Google Homepage
+The Odin Project Course Assignment
 
-</div>
 
-## Project: Google Homepage
-Deconstructing and building a Google homepage using HTML, CSS and Javascript
+- This project is a part of [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations) Foundations curriculum
 
--> [Live Demo](https://davidtrikic.github.io/google-homepage/)
+- The goal is to deconstruct and build a Google homepage using HTML, CSS and JavaScript
+
+### Live preview: [link](https://davidtrikic.github.io/google-homepage/)
 
 ## Screenshots
 
